@@ -645,6 +645,10 @@ video {
   height: fit-content;
 }
 
+.h-dvh {
+  height: 100dvh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
