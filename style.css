@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Stratos SemiBold';
+}
+nav > div{
+    margin: 0.8rem 0.8rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 3px rgba(0,0,0,.07),0 2px 2px rgba(0,0,0,.06);
+    font-size: 1.4rem;
+}
+main img{
+    position: relative;
+    top: 0%;
+    left: 5%;
+    z-index: -3;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.svg {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 800' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1140.36 0H0V800H334.864C381.06 751.993 468.429 688.12 607.97 606.823C877.46 449.813 269 587.073 269 587.073C632.187 441.176 839.194 257.716 989.83 124.214L989.833 124.212C1046.15 74.3 1094.59 31.372 1140.36 0ZM1439.89 0V370.878C1228.68 540.098 810.556 691.793 557.666 783.54L557.662 783.541C542.556 789.017 527.454 794.504 512.356 800H781.814C881.645 762.352 979.252 715.643 1072.52 671.009L1072.52 671.008C1205.91 607.177 1330.43 547.59 1439.89 524.823V800H1440V0H1439.89ZM1214.97 800C1334.41 656.877 1342.22 562.883 1083.6 698.373C1009.97 736.949 934.497 770.995 860.804 800H1214.97Z' fill='%23003207'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    z-index: -2;
+}
+nav > div span{
+    position: relative;
+    font-size: 0.9rem;
+    transition: 0.35s all ease-in-out 0.1s;
+    z-index: 2;
+}
+
+svg,nav > div span:hover {
+    color: #fff;
+    z-index: 5;
+    cursor: pointer;
+}
+.nav span::before{
+    content: "";
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: black;
+    z-index: -1;
+    transition: 0.35s all ease-in-out 0.1s;
+}
+.nav span:hover::before{
+    top: unset;
+    height: 100%;
+    bottom: 0%;
+}
+.page_1_bt > span{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    transition: 0.4s ease-in-out;
+}
+.page_1_bt p{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    transition: 0.4s ease-in-out;
+}
+@keyframes btn {
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.page_1_bt > span.animate-btn {
+    animation: btn 0.4s ease-in-out;
+}
+
+/* page2 */
