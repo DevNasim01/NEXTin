@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="locomotive-scroll" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" integrity="sha256-TryXbHoOGuTSpAGc8mP33sWvAKI+fhvU4AZZ0LPaesk=" crossorigin="anonymous">
     <link rel="stylesheet" href="output.css">
     <title>NEXTin</title>
 </head>
-<body class="h-dvh">
+<body>
 
     <nav class="fixed top-0 left-0 w-full z-50">
         <div class="nav flex justify-items-start items-center px-8 gap-6 ">
@@ -29,7 +29,7 @@
         </div>
     </nav> 
 
-    <main class="bg-[#FDF3EA]">
+    <main class="bg-[#FDF3EA] min-h-fit">
     <div class="w-full overflow-hidden page_one" data-scroll data-scroll-speed="-3.5">
         <img src="./media/82649e17308532ec5da670fe14e7b60d9edb8555-3555x2000.jpg" alt="bg-img" data-scroll data-scroll-speed="-3.5">
         <div class="svg" data-scroll data-scroll-speed="-3.5">
@@ -53,7 +53,7 @@
     
    
     <!-- page2 -->
-        <section class="w-full bg-[#FDF3EA] px-36 py-16" data-scroll data-scroll-speed="1">
+        <section class="w-full bg-[#FDF3EA] px-36 py-16 min-h" data-scroll data-scroll-speed="1.5" >
 
             <div>
                 <div class="flex h-fit w-full">
@@ -67,13 +67,13 @@
             </div>
 
 
-            <div class="grid grid-cols-2 w-full h-fit">
-                <div class="sticky top-0 left-0">
+            <div class="flex justify-items-start justify-between" data-scroll data-scroll-speed="2" >
+                <div class="sticky top-[20%] min-w-[50%] h-fit flex flex-col justify-items-start z-40">
                     <p  class="text-[4.3rem]/[3.8rem] tracking-tight">CHOOSE <br> YOUR PATH</p>
                     <p class="mt-6 font-['Stratos'] text-[0.9rem] font-light">In welk vakgebied wil jij impact maken?</p>
                 </div>
                 
-                <div class="flex flex-col mt-36">
+                <div class="flex flex-col mt-36 min-w-[50%] overflow-auto">
                     <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
 
                     <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
@@ -86,11 +86,35 @@
                 </div>
             </div>
 
+            <section>
+                <div class="flex justify-items-start justify-between" data-scroll data-scroll-speed="2" >
+                    <div class="sticky top-[20%] min-w-[50%] h-fit flex flex-col justify-items-start">
+                        <p  class="text-[4.3rem]/[3.8rem] tracking-tight">CHOOSE <br> YOUR PATH</p>
+                        <p class="mt-6 font-['Stratos'] text-[0.9rem] font-light">In welk vakgebied wil jij impact maken?</p>
+                    </div>
+                    
+                    <div class="flex flex-col mt-36 min-w-[50%] overflow-auto">
+                        <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
+    
+                        <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
+    
+                        <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
+    
+                        <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
+    
+                        <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
+                    </div>
+                </div>
+    
+            </section>
+
+           
         </section>
 
+        
     </main>
 </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" integrity="sha256-odlNpseyKe/Yr2FVkKfof6CSj8+edbarxw5hDpqCGBE=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js"></script>

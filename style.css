@@ -86,3 +86,6 @@ svg,nav > div span:hover {
 }
 
 /* page2 */
+.min-h{
+    min-height: fit-content !important;
+}
