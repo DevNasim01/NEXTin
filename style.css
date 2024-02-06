@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root{
+--color-primary: 0 50 7;
+--color-secondary: 93 160 255;
+--color-copy: 253 243 234;
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -86,6 +90,24 @@ svg,nav > div span:hover {
 }
 
 /* page2 */
-.min-h{
-    min-height: fit-content !important;
+.btn_text_box:hover{
+    .btn_text_box-i{
+        animation: page2_btn 500ms ease-in-out;
+    }
 }
+.btn_text_box span{
+    overflow: hidden !important;
+}
+
+@keyframes page2_btn {
+    33%{
+        right: -50%;
+    }
+    66%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+

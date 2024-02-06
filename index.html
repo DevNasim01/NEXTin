@@ -29,9 +29,9 @@
         </div>
     </nav> 
 
-    <main class="bg-[#FDF3EA] min-h-fit">
-    <div class="w-full overflow-hidden page_one" data-scroll data-scroll-speed="-3.5">
-        <img src="./media/82649e17308532ec5da670fe14e7b60d9edb8555-3555x2000.jpg" alt="bg-img" data-scroll data-scroll-speed="-3.5">
+    <main class="bg-[#FDF3EA] min-h-fit" data-scroll-container>
+    <div class="w-full overflow-hidden page_one"  data-scroll data-scroll-speed="-3.5" >
+        <img src="./media/82649e17308532ec5da670fe14e7b60d9edb8555-3555x2000.webp" alt="bg-img" data-scroll data-scroll-speed="-3.5">
         <div class="svg" data-scroll data-scroll-speed="-3.5">
          
         </div>
@@ -53,7 +53,7 @@
     
    
     <!-- page2 -->
-        <section class="w-full bg-[#FDF3EA] px-36 py-16 min-h" data-scroll data-scroll-speed="1.5" >
+        <section class="w-full bg-[#FDF3EA] px-36 py-32" data-scroll data-scroll-speed="0">
 
             <div>
                 <div class="flex h-fit w-full">
@@ -62,39 +62,58 @@
                 </div>
     
                 <div class="w-full h-fit mb-24 mt-32">
-                    <video src="./Traineeships   Next[Playlist.M3u8].mp4" autoplay loop muted></video>
+                    <video src="Traineeships   Next[Playlist.M3u8].mp4" autoplay loop muted></video>
                 </div>
             </div>
 
 
-            <div class="flex justify-items-start justify-between" data-scroll data-scroll-speed="2" >
-                <div class="sticky top-[20%] min-w-[50%] h-fit flex flex-col justify-items-start z-40">
+            <div class="flex justify-items-start justify-between" id="sticky">
+                <div class="min-w-[50%] h-fit flex flex-col justify-items-start mt-20" data-scroll data-scroll-sticky data-scroll-target="#sticky" >
                     <p  class="text-[4.3rem]/[3.8rem] tracking-tight">CHOOSE <br> YOUR PATH</p>
                     <p class="mt-6 font-['Stratos'] text-[0.9rem] font-light">In welk vakgebied wil jij impact maken?</p>
                 </div>
                 
-                <div class="flex flex-col mt-36 min-w-[50%] overflow-auto">
-                    <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
+                <div class="flex flex-col mt-52 min-w-[50%] justify-center">
+                    <div class="flex justify-start items-center border-t text-black border-[#0032071a]">
+                        <span class="btn_text_box hover:translate-x-16 transition-all h-full w-full flex justify-start items-center gap-6 px-6 hover:cursor-pointer py-20 duration-500">
+                            <span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full">
+                                <span class="btn_text_box-i w-full h-full relative flex justify-center items-center"><i class="fa-solid fa-arrow-right text-sm"></i></span>
+                            </span><p class="text-7xl tracking-tight">FINANCE</p>
+                        </span>
+                    </div>
 
-                    <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
+                    
+                    <div class="flex justify-start items-center border-t text-black border-[#0032071a]">
+                        <span class="btn_text_box hover:translate-x-16 transition-all h-full w-full flex justify-start items-center gap-6 px-6 hover:cursor-pointer py-20 duration-500">
+                            <span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full">
+                                <span class="btn_text_box-i w-full h-full relative flex justify-center items-center"><i class="fa-solid fa-arrow-right text-sm"></i></span>
+                            </span><p class="text-7xl tracking-tight">IT</p>
+                        </span>
+                    </div>
 
-                    <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
+                    
+                    
+                    <div class="flex justify-start items-center border-t text-black border-[#0032071a]">
+                        <span class="btn_text_box hover:translate-x-16 transition-all h-full w-full flex justify-start items-center gap-6 px-6 hover:cursor-pointer py-20 duration-500">
+                            <span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full">
+                                <span class="btn_text_box-i w-full h-full relative flex justify-center items-center"><i class="fa-solid fa-arrow-right text-sm"></i></span>
+                            </span><p class="text-7xl tracking-tight">PUBLIC</p>
+                        </span>
+                    </div>
 
-                    <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
-
-                    <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
+                    
                 </div>
             </div>
 
-            <section>
-                <div class="flex justify-items-start justify-between" data-scroll data-scroll-speed="2" >
+            <section class="mt-7">
+                <div class="flex justify-items-start justify-between"  >
                     <div class="sticky top-[20%] min-w-[50%] h-fit flex flex-col justify-items-start">
                         <p  class="text-[4.3rem]/[3.8rem] tracking-tight">CHOOSE <br> YOUR PATH</p>
                         <p class="mt-6 font-['Stratos'] text-[0.9rem] font-light">In welk vakgebied wil jij impact maken?</p>
                     </div>
                     
                     <div class="flex flex-col mt-36 min-w-[50%] overflow-auto">
-                        <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
+                        <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class=" w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
     
                         <div class="flex justify-start items-center px-6 gap-6 py-12 relative border-t text-black border-[#0032071a]"><span class="w-12 h-12 text-xl flex justify-center items-center bg-[#D4FD36] rounded-full"><i class="fa-solid fa-arrow-right text-sm"></i></span><p class="text-6xl tracking-tight">FINANCE</p></div>
     
@@ -115,6 +134,6 @@
     </main>
 </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" integrity="sha256-odlNpseyKe/Yr2FVkKfof6CSj8+edbarxw5hDpqCGBE=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" integrity="sha256-odlNpseyKe/Yr2FVkKfof6CSj8+edbarxw5hDpqCGBE=" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 <script src="script.js"></script>
