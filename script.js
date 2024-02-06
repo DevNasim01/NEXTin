@@ -31,7 +31,12 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     repeat: true,
-    multiplier: 0.6
+    multiplier: 0.6,
+    smartphone: {
+        smooth: true,
+        multiplier: 0.6
+    }
+    
 });
 
 // let btn_text_box = document.querySelectorAll(".btn_text_box");
