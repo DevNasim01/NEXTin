@@ -1,53 +1,54 @@
-let page_1_bt = document.querySelector(".page_1_bt");
-let btn = document.querySelector(".page_1_bt > span");
-let btn_text = document.querySelector(".page_1_bt p");
+let page_1_bt = document.querySelectorAll(".page_1_bt");
 
-function addAnimation() {
-    btn.classList.add("animate-btn");
-}
+page_1_bt.forEach(element => {
+    let btn = element.querySelector("span");
+    let btn_text = element.querySelector("p");
 
-function removeAnimation() {
-    btn.classList.remove("animate-btn");
-}
+    function addAnimation() {
+        btn.classList.add("animate-btn");
+    }
 
-function handleMouseOver() {
-    btn.style.left = '74%';
-    btn_text.style.left = '-30%';
-    addAnimation();
-}
+    function removeAnimation() {
+        btn.classList.remove("animate-btn");
+    }
 
-function handleMouseLeave() {
-    removeAnimation();
-    btn.style.left = '0%';
-    btn_text.style.left = '0%';
-    
-}
+    function handleMouseOver() {
+        btn.style.left = '74%';
+        btn_text.style.left = '-30%';
+        addAnimation();
+    }
 
-page_1_bt.addEventListener("mouseover", handleMouseOver);
-page_1_bt.addEventListener("mouseleave", handleMouseLeave);
+    function handleMouseLeave() {
+        removeAnimation();
+        btn.style.left = '0%';
+        btn_text.style.left = '0%';
+    }
+
+    element.addEventListener("mouseover", handleMouseOver);
+    element.addEventListener("mouseleave", handleMouseLeave);
+});
+
 
 
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     repeat: true,
-    multiplier: 0.5,
+    multiplier: 0.3,
+    scrollFromAnywhere: true,
     smartphone: {
         smooth: true,
-        multiplier: 0.8
+        multiplier: 0.9
     }
     
 });
 
-// let btn_text_box = document.querySelectorAll(".btn_text_box");
-// let i = document.querySelectorAll('.btn_text_box-i');
 
-// function con(){
-//     i.style.left = '74%';
-// }
 
-// for (let b of btn_text_box) {
-//     b.addEventListener("mouseover", con);
-// }
 
+  
+
+
+  
+  
 
