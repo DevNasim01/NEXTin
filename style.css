@@ -130,5 +130,45 @@ svg,nav > div span:hover {
 }
 
 
-
-  
+.btn3{
+    position: relative;
+    font-size: 0.9rem;
+    transition: 0.35s all ease-in-out 0.1s;
+    z-index: 2;
+    overflow: hidden;
+}
+.btn3:hover{
+    color: #fff;
+    z-index: 5;
+    cursor: pointer;
+}
+.btn3:hover > span{
+    animation: btn3 0.35s ease-in;
+}
+.btn3::before{
+    content: "";
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: black;
+    border-radius: 9999px;
+    z-index: -1;
+    transition: 0.35s all ease-in-out 0.1s;
+}
+.btn3:hover::before{
+    top: unset;
+    height: 100%;
+    bottom: 0%;
+}
+@keyframes btn3 {
+    20%{
+        top: 70%;
+        opacity: 0;
+    }
+    100%{
+        top: 0%;
+        opacity: 1;
+    }
+}
