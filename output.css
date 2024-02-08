@@ -1239,11 +1239,13 @@ svg,nav > div span:hover {
   20%{
     top: 70%;
     opacity: 0;
+    transform: scale(0);
   }
 
   100%{
     top: 0%;
     opacity: 1;
+    transform: scale(1);
   }
 }
 
