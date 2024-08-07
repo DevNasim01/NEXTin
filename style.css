@@ -9,20 +9,27 @@
 }
 
 @font-face {
-    font-family: 'Stratos';
+    font-family: 'STRATOS-REGULAR';
     src: url('./fonts/STRATOS-REGULAR.woff2') format('woff2'),
          url('./fonts/STRATOS-REGULAR.woff') format('woff');
-
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
     font-family: 'STRATOS-SEMIBOLD';
     src: url('./fonts/STRATOS-SEMIBOLD.woff2') format('woff2'),
          url('./fonts/STRATOS-SEMIBOLD.woff') format('woff');
-}
+    font-weight: 600;
+    font-style: normal;
+  }
 
 
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'STRATOS-REGULAR';
 }
 nav > div{
     margin: 1vw 1vw;
