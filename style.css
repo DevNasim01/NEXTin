@@ -7,11 +7,22 @@
 --color-copy: 253 243 234;
 --vh: 100vh;
 }
+
+@font-face {
+    font-family: 'Stratos';
+    src: url('./fonts/STRATOS-REGULAR.woff2') format('woff2'),
+         url('./fonts/STRATOS-REGULAR.woff') format('woff');
+
+    font-family: 'STRATOS-SEMIBOLD';
+    src: url('./fonts/STRATOS-SEMIBOLD.woff2') format('woff2'),
+         url('./fonts/STRATOS-SEMIBOLD.woff') format('woff');
+}
+
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Stratos SemiBold';
 }
 nav > div{
     margin: 1vw 1vw;
