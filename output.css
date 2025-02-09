@@ -560,8 +560,16 @@ video {
   position: sticky;
 }
 
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.right-5 {
+  right: 1.25rem;
 }
 
 .top-0 {
@@ -589,6 +597,10 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -607,6 +619,10 @@ video {
 
 .mr-\[7vw\] {
   margin-right: 7vw;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-7 {
@@ -645,6 +661,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -667,6 +687,10 @@ video {
 
 .h-\[4vw\] {
   height: 4vw;
+}
+
+.h-dvh {
+  height: 100dvh;
 }
 
 .h-fit {
@@ -880,6 +904,11 @@ video {
   padding-right: 2.4vw;
 }
 
+.px-\[20\%\] {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 .px-\[8vw\] {
   padding-left: 8vw;
   padding-right: 8vw;
@@ -933,6 +962,15 @@ video {
 
 .font-\[STRATOS-SEMIBOLD\] {
   font-family: STRATOS-SEMIBOLD;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-6xl {
@@ -1008,6 +1046,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-extralight {
   font-weight: 200;
 }
@@ -1016,8 +1059,20 @@ video {
   font-weight: 300;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.leading-snug {
+  line-height: 1.375;
 }
 
 .tracking-tight {
@@ -1305,4 +1360,14 @@ svg,nav > div span:hover {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
 }
